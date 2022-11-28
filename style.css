@@ -1,7 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 html {
     background: radial-gradient(rgb(139, 195, 245),#1294b8);
 }
 .logo{
+
     color: #f2f2f2;
     /*margin-left: 160px;*/
     float: left;
@@ -41,7 +47,7 @@ color: rgb(212, 209, 209);
 .container{
     margin-left: 230px;
     width: 1150px;
-    margin-top: 35px;
+    margin-top: 90px;
     display: flex;
 }
 .left{
@@ -54,9 +60,12 @@ color: rgb(212, 209, 209);
    justify-content: right;
 }
 .intro{
+    color: rgb(63, 62, 62);
     width: 300px;
+    margin-bottom: 15px;
 }
 .h1_intro{
+    margin-bottom: 15px;
     width: 300px;
     font-family: Arial;
     color: rgb(63, 62, 62);
@@ -85,8 +94,53 @@ button[type="submit"] {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #f8f5f5;
 }
-  
-  button[type="submit"]:hover {
+button[type="submit"]:hover {
     opacity: 1;
-  }
-  
+}
+.Products-Featrues{
+    background-color: #f8f5f5;
+    font-family: Arial;
+    color: rgb(63, 62, 62);
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Products-Featrues>h3{
+    margin: 30px;
+    padding-top: 30px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+.Products-Featrues>p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #555;
+    font-size: medium;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.box {
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+    gap: 10px;
+}
+.box-item {
+    margin: 30px;
+    padding: 25px;
+    height: 250px;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 18px;
+    background: radial-gradient(rgb(139, 195, 245),#1294b8);
+    flex: 1 1 auto;
+    /*margin: 0 10px 0 10px;*/
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    color: #555;
+    padding: 50px;
+}
