@@ -1,0 +1,62 @@
+html {
+    background: radial-gradient(rgb(139, 195, 245),#1294b8);
+}
+.logo{
+    color: #f2f2f2;
+    /*margin-left: 160px;*/
+    float: left;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: Arial Black;
+    margin-top: 0;
+    flex-grow: 4;
+}
+.social-media{
+    float: right;
+    flex-grow: 3;
+    padding: 14px 16px;
+}
+.fa-brands{
+    color: #f2f2f2;
+    margin-left: 20px;
+}
+.topnav{
+    display: flex;
+    text-align: center;
+   margin-top: 40px; 
+}
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.fa-brands:hover{
+    color: rgb(212, 209, 209);
+}
+.topnav a:hover {
+color: rgb(212, 209, 209);
+}
+.container{
+    margin-left: 250px;
+    width: 1150px;
+    margin-top: 35px;
+    display: flex;
+}
+.left{
+    justify-content: left;
+    flex: 1;
+}
+.right{
+   flex: 2;
+   justify-content: right;
+}
+.intro{
+    width: 300px;
+}
+.h1_intro{
+    width: 300px;
+    font-family: Arial;
+    color: rgb(63, 62, 62);
+}
