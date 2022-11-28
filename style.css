@@ -39,12 +39,13 @@ html {
 color: rgb(212, 209, 209);
 }
 .container{
-    margin-left: 250px;
+    margin-left: 230px;
     width: 1150px;
     margin-top: 35px;
     display: flex;
 }
 .left{
+    margin-top: 70px;
     justify-content: left;
     flex: 1;
 }
@@ -60,3 +61,32 @@ color: rgb(212, 209, 209);
     font-family: Arial;
     color: rgb(63, 62, 62);
 }
+input[type=search] {
+    border: 1px solid #f8f5f5;
+    padding: 10px 12px;
+    border-radius: 18px;
+    width: 330px;
+}
+form {
+    background-color: #f8f5f5;
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid #f2f2f2;
+    border-radius: 18px;
+    margin: 0 0 30px;
+  }
+button[type="submit"] {
+    background-color: #2ca5f5;
+    border: 1px solid #2ca5f5;
+    margin-left: 3px;
+    border-radius: 16px;
+    width: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f8f5f5;
+}
+  
+  button[type="submit"]:hover {
+    opacity: 1;
+  }
+  
