@@ -1,10 +1,9 @@
 function bigImg(x) {
-    x.style.marginTop = "60px";
-    
+    x.style.transform= "translateY(-15px)";
+    x.style.transition= "0.5s";
     
     setTimeout(() => {
-        x.style.marginTop = "30px";
+        x.style.transform= "translateY(-0px)";
       }, 500);
 
-  }
- 
+}
