@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     background: radial-gradient(rgb(139, 195, 245),#1294b8);
 }
@@ -255,15 +256,74 @@ figcaption:nth-of-type(even) {
 .sc{
     height: 50px;
     width: 50px;
+   
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: -50px;
     align-items: center;
     transition: 0.5s;
 }
 .card:hover .sc{
-    left:0;
+    left:-4px;
 }
 .sc .fa-brands{
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #ffffff;
     color: rgb(8, 8, 8);
+}
+.parallax {
+    margin: 0px;
+    /* The image used */
+    background-image: url("/img/blog4.png");
+    /*
+    opacity: 0.1;
+    background-color: #000000;
+     filter: grayscale(1);*/
+    /* Set a specific height */
+    min-height: 500px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.demo{
+   
+    margin: 0; 
+    display: grid;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.demo>*:first-child {
+    align-self: stretch;
+}
+.h3-demo{
+    margin-top: 50px;
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p-demo{
+    padding-bottom: 30px;
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+    margin: 25px;
+}
+.start{
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    width: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    margin-left: 350px;
+    text-align: center;
+}
+.start:hover{
+    color: #000000;
 }
