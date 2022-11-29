@@ -98,17 +98,15 @@ button[type="submit"]:hover {
     opacity: 1;
 }
 .Products-Featrues{
+    padding: 40px;
     background-color: #f8f5f5;
     font-family: Arial;
     color: rgb(63, 62, 62);
     margin-left: -20px;
     margin-right: -20px;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 .Products-Featrues>h3{
-    margin: 30px;
-    padding-top: 30px;
     font-size: x-large;
     display: flex;
     justify-content: center;
@@ -117,7 +115,6 @@ button[type="submit"]:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #555;
     font-size: medium;
-    margin: 30px;
     display: flex;
     justify-content: center;
 }
@@ -140,7 +137,87 @@ button[type="submit"]:hover {
     justify-content: center;
     text-align: center;
 }
-.text{
-    color: #555;
-    padding: 50px;
+.info{
+    padding: 30px;
+    background-color: #f8f5f5;
+    font-family: Arial;
+    color: rgb(63, 62, 62);
+    margin-left: -20px;
+    margin-right: -20px;
+
 }
+.h3-out{
+    padding-top: 30px;
+    color: rgb(10, 10, 10);
+    font-size: 25px;
+    margin-top: 35px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 500px;
+    margin-left: 460px;
+}
+.p-out{
+    padding-bottom: 30px;
+    color: #555;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 45px;
+    text-align: center;
+    width: 490px;
+    margin: 25px;
+    margin-left: 460px;
+}
+.flex{
+    display: flex;
+    background-color: #f8f5f5;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.flex-box{
+    flex: 1 1 auto;
+    width: 350px;
+    height: 250px;
+    margin: 50px 0px 80px 80px;
+}
+.flex-h3{
+    color: rgb(2, 2, 2);
+    margin-left:60px;
+    font-size: x-large;
+}
+.flex-p{
+    color: #555;
+    margin-left:50px;
+    margin-bottom: 25px;
+    font-size:13px;
+}
+.flex2-h3{
+    color: rgb(2, 2, 2);
+    margin-left:30px;
+    font-size: large;
+}
+.flex2-p{
+    color: #555;
+    margin-left:50px;
+    margin-bottom: 35px;
+    font-size:14px;
+}
+.imges{
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   
+}
+.box-img{
+    margin: 0;
+}
+.img{
+    margin: 2%;
+    border-radius: 45%;
+    width: 160px;
+    height: 150px;
+}
+ imges:nth-of-type(even) {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+ }
