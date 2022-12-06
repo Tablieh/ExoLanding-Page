@@ -436,13 +436,13 @@ figcaption:nth-of-type(even) {
 
 }
 .link-but{
-    background-color: #2ca5f5;
+    background-color: #f3f4f5;
     border: 1px solid #2ca5f5;
     margin-left: 3px;
     border-radius: 3px;
     width: 100px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #f8f5f5;
+    color: #2ca5f5;
     text-decoration: none;
     padding: 3px;
 }
@@ -507,6 +507,7 @@ text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     height: 350px;
     position: relative;
+    transition: 0.5s;
 }
 .price-flex{
     display: flex;
@@ -565,11 +566,74 @@ text-align: center;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     opacity: 0;
+    transition: 0.5s;
 }
-.price-card:hover{
-    opacity: 1;
-}
-.sale:hover{
+.price-card:hover .sale{
     right: 0;
     opacity: 1;
+}
+.price-card:hover{
+    transform: translateY(-15px);
+}
+.price-card:hover .link-but{
+    background-color: #2ca5f5;
+    color: #f8f5f5;
+    font-weight: bold;
+}
+.footer-media .fa-brands{
+    border: 1px solid #f8f8f8;
+    border-radius: 50%;
+    padding: 6px;
+    color: rgb(253, 253, 253);
+}
+.footer{
+    background-color: rgba(22, 22, 22, 0.87);
+    min-height: 30vh;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.footer-media{
+    padding-top: 50px;
+}
+.footer-flex a{
+text-decoration: none;
+color: rgb(212, 209, 209);
+}
+.footer-flex{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    color: rgb(212, 209, 209);
+}
+.foot-p{
+    color: rgb(212, 209, 209);
+    font-size: 14px;
+}
+#CLIENT{
+    background-color: #f8f8f8;
+    min-height: 50vh;
+    text-align: center;
+    color: #000000;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.list .fa-brands .fa-solid{
+    border: 1px solid #201f1f;
+    border-radius: 50%;
+}
+.list a{
+    color: #201f1f;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Lucida Sans';
+}
+.list a:hover{
+    color: #154c8a;
 }
