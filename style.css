@@ -335,6 +335,7 @@ figcaption:nth-of-type(even) {
     transition: 0.5s;
 }
 .start:hover{
+    cursor: pointer;
     font-weight: bold;
     transform: translateY(-10px);
     width: 100px;
