@@ -31,9 +31,6 @@ myBtn.addEventListener("click", function () {
   );
 });
 }
-
-
-
 /*
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -52,3 +49,20 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 */
+const buttonGroup = document.getElementById("button-group"); 
+const s = document.getElementById("DIV");
+const button = document.getElementsByClassName("button");
+
+const buttonGroupPressed = (e) => {
+  console.log(e)
+  const isButton = e.target.nodeName === 'BUTTON';
+  if(!isButton) {
+     return;
+   }
+  
+  document.s.style.backgroundColor = e.target.value; // change background color of body tag
+  //e.target.style.backgroundColor =  e.target.value; // / change background color of the clicked button
+  
+}
+
+buttonGroup.addEventListener('click', buttonGroupPressed);

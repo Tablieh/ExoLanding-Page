@@ -656,3 +656,28 @@ color: rgb(212, 209, 209);
 #myBtn:active{
     background: rgb(141, 139, 139);
 }
+#button-group {
+    background: black;
+    padding: 20px;
+}
+.button {
+    padding: 10px;
+    font-size: 1.1em;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+#DIV{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:grey;
+}
