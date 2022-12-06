@@ -627,6 +627,7 @@ color: rgb(212, 209, 209);
 .list .fa-brands .fa-solid{
     border: 1px solid #201f1f;
     border-radius: 50%;
+    text-decoration: none;
 }
 .list a{
     color: #201f1f;
@@ -637,4 +638,21 @@ color: rgb(212, 209, 209);
 }
 .list a:hover{
     color: #154c8a;
+}
+#myBtn{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: #f2f2f2;
+    background: #555;
+    box-shadow: 0 0 10xp white;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+#myBtn:active{
+    background: rgb(141, 139, 139);
 }
