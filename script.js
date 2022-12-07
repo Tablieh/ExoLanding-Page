@@ -49,20 +49,56 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 */
-const buttonGroup = document.getElementById("button-group"); 
-const s = document.getElementById("DIV");
-const button = document.getElementsByClassName("button");
-
-const buttonGroupPressed = (e) => {
-  console.log(e)
-  const isButton = e.target.nodeName === 'BUTTON';
-  if(!isButton) {
-     return;
-   }
-  
-  document.s.style.backgroundColor = e.target.value; // change background color of body tag
-  //e.target.style.backgroundColor =  e.target.value; // / change background color of the clicked button
-  
+function changeStyle(){
+  var element = document.getElementById("myDiv");
+  element.style.backgroundColor = "#00FF00";
 }
 
-buttonGroup.addEventListener('click', buttonGroupPressed);
+function changeColor(color) { 
+  var innerDiv = document.querySelector(".myDiv");
+
+  var boxes = document.querySelectorAll(".h3-out");
+  var rounds = document.querySelectorAll(".box-item");
+  var texts = document.querySelectorAll(".changeColText");
+  var links = document.querySelectorAll(".link");
+  var sales = document.querySelectorAll(".sale");
+  
+  innerDiv.style.background = color; 
+
+  rounds.forEach( round=> {
+    round.style.background = color;
+    round.style.color = "black";
+    round.style.margin =" 0 10px 0 10px ";
+  });
+  sales.forEach( sale=> {
+    sale.style.background = color;
+    sale.style.color = "black";
+  });  
+  boxes.forEach(box => {
+    box.style.color = color;
+  });
+  texts.forEach(text => {
+    text.style.color = color;
+  });
+  links.forEach(link => {
+      link.style.color = color;
+  });
+  /*
+  ///here the menu section
+  
+  */
+
+  /* Sélection des éléments HTML */
+  window.onscroll = function() {scrollMenu()};
+
+  function scrollMenu() {
+    window.onscroll = function() { 
+      if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        myBtn.style.opacity = "1";
+      } else {
+        myBtn.style.opacity = "0";
+      }}; 
+  }
+  const myBtn = document.getElementById("myBtn");
+
+}

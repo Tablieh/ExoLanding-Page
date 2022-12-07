@@ -9,7 +9,7 @@
     <title>LANDING PAGE</title>
 </head>
 <body>
-    <section id="btn1">
+    <section class="myDiv">
         <header>
             <nav class="topnav">
                 <div class="Logo">
@@ -31,7 +31,7 @@
                 </div>
             </nav>
         </header>
-        <main id="HOME" class="container">
+        <main id="HOME" class="container1">
             <div class="left">
                 <h1 class="h1_intro">
                     We are StartUp
@@ -60,7 +60,7 @@
         <h3 class="h3-out">Products Features</h3>
         <p class="p-out">it is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
         <div class="box">
-            <div class="box-item"  onmouseover="bigImg(this)">
+            <div class="box-item" onmouseover="bigImg(this)">
                 <i class="fa-solid fa-globe fa-6x"></i>
                 <h1>
                     Digital Design
@@ -295,7 +295,7 @@
             <div class="price-content">
                 <div class="price-card">
                     <h2>Starter</h2>
-                    <h1>$9 <p class="month">/month</p></h1>
+                    <h1 class="changeColText">$9 <p class="month">/month</p></h1>
                     <div class="price-flex">
                         <div class="price-left">
                             <p>Bandwidth</p>
@@ -319,7 +319,7 @@
                 </div>
                 <div class="price-card">
                     <h2>Advanced</h2>
-                    <h1>$19 <p class="month">/month</p></h1>
+                    <h1 class="changeColText">$19 <p class="month">/month</p></h1>
                     <div class="price-flex">
                         <div class="price-left">
                             <p>Bandwidth</p>
@@ -343,7 +343,7 @@
                 </div>
                 <div class="price-card">
                     <h2>Professional</h2>
-                    <h1>$29 <p class="month">/month</p></h1>
+                    <h1 class="changeColText">$29 <p class="month">/month</p></h1>
                     <div class="price-flex">
                         <div class="price-left">
                             <p>Bandwidth</p>
@@ -388,15 +388,29 @@
     </div>
     <!--<i class="fa-solid fa-arrow-up"></i>-->
     <button onclick="goup(this)" id="myBtn" ><i class="fa-solid fa-arrow-up"></i></button>
-    <div id="DIV">
-        <h1>Welcome to JavaScript World</h1>
-      </div>
-    <div id="button-group">
-        <button class="button" value="red">Red</button>
-        <button class="button" value="blue">Blue</button>
-        <button class="button" value="green">Green</button>
-        <button class="button" value="yellow">Yellow</button>
-     </div>
+    <div class="nav-toggle">
+        <div class="nav-toggle-bar"></div>
+    </div>
+    <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>  
+            <div class="logo1">
+            </div>
+            <div class="menu-items">
+                <li><a  onclick = "changeColor('#1294b8');" href="#">Bleu</a></li>
+                <li><a  onclick = "changeColor('green');" href="#">Vert</a></li>
+                <li><a  onclick = "changeColor('red');" href="#">Rouge</a></li>
+                <li><a  onclick = "changeColor('rgb(129, 13, 139)');" href="#">purple</a></li>
+            </div>
+          </div>
+        </div>
+    </nav>
 </body>
 
 </html>
