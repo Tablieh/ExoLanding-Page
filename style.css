@@ -672,8 +672,6 @@ a:-webkit-any-link {
     top: 10%;
     left: 0;
     width: 10%;
-    
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
   }
   
   .nav-container {
@@ -696,7 +694,6 @@ a:-webkit-any-link {
     color: #0e2431;
     font-weight: 500;
     font-size: 1.2rem;
-    padding: 0.7rem;
   }
   
   .navbar .nav-container a:hover{
@@ -757,13 +754,15 @@ a:-webkit-any-link {
   }
   
   .navbar .menu-items {
-    padding-top: 120px;
+    padding-top: 50px;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
     height: 100vh;
-    width: 100%;
+    width: 180px;
+    height: 100px;
     transform: translate(-150%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2px;
     margin-left: -40px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
@@ -771,8 +770,6 @@ a:-webkit-any-link {
   }
   
   .navbar .menu-items li {
-    margin-bottom: 1.2rem;
-    font-size: 1.5rem;
     font-weight: 500;
   }
   
@@ -803,3 +800,43 @@ a:-webkit-any-link {
   .nav-container input[type="checkbox"]:checked ~ .logo{
     display: none;
   }
+  .color-box{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: #1294b8;
+    font-size: 3px;
+    text-align: center;
+    animation: appear 1s;
+    border-radius: 6px;
+}
+.color-box1{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: green;
+    font-size: 3px;
+    text-align: center;
+    animation: appear 1s;
+    border-radius: 6px;
+}
+.color-box2{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: red;
+    font-size: 3px;
+    text-align: center;
+    animation: appear 1s;
+    border-radius: 6px;
+}
+.color-box3{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: rgb(129, 13, 139);
+    font-size: 3px;
+    text-align: center;
+    animation: appear 1s;
+    border-radius: 6px;
+}
